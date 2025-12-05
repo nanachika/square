@@ -123,13 +123,7 @@ class SquareGame:
             self.screen.fill(BLACK)
             
             # Рисуем инструкции
-            instructions = [
-                "Управление: WASD",
-                "Цель: съесть красный квадрат",
-                "ESC - выход",
-                "",
-                f"Счет: {self.score}"
-            ]
+            instructions = [f"Счет: {self.score}"]
             
             for i, line in enumerate(instructions):
                 text = self.font.render(line, True, YELLOW)

@@ -125,10 +125,6 @@ class SquareGame:
             # Рисуем инструкции
             instructions = [f"Счет: {self.score}"]
             
-            for i, line in enumerate(instructions):
-                text = self.font.render(line, True, YELLOW)
-                self.screen.blit(text, (10, 10 + i * 30))
-            
             # Рисуем анимацию "съедения", если она активна
             if self.eating_animation > 0:
                 glow_size = SQUARE_SIZE + self.eating_animation * 2
